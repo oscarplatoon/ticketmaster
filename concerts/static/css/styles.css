@@ -1,0 +1,20 @@
+.home-content {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.artist-image {
+    width: 500px;
+}
+
+#concerts-list-content>* {
+    margin: 15px 0 0px 20px;
+}
+
+#articles-list>li {
+    margin-bottom: 10px;
+}
+
+#articles-list {
+    margin-bottom: 20px;
+}

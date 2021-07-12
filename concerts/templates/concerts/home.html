@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Concerts{% endblock title %}
+
+{% block content %}
+    <div class='home-content'>
+        <h1>Search Concerts For Artist:</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="artist_name">
+            <button type="submit">Search</button>
+        </form>
+
+        <br>
+        {% if artists %}
+            <h3>Pick One: </h3>
+            
+            <div class="container">
+                <div class="row">
+                    {% for artist in artists %}
+                    <div class="col-sm">
+                        <a href="{% url 'concerts:show_concerts_and_news' artist_id=artist.id %}">
+                            <p>{{artist.name}}</p>
+                            <img src="{{ artist.images.0.url }}" alt="{{artist.name}} image" class='artist-image'>
+                        </a>
+                    </div>
+                    {% endfor %}  
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock content %}
