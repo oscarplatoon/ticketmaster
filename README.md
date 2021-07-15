@@ -65,6 +65,10 @@ Use the Google Maps Embed API from the lecture to display concert locations.
 
 Use Python's [Request](https://realpython.com/python-requests/) library and know what to do after you get the [Response](https://realpython.com/python-requests/#the-response).
 
+### Example Request/Response Flow
+
+![](https://github.com/oscarplatoon/curriculum/blob/master/page-resources/ticketmaster_req_res.png)
+
 ## How to start?
 __Get organized!__
 - Have one person in your group create a Github repository on their personal Github or fork over this repository and create a template Django Project and push it to the newly created or forked repository.
