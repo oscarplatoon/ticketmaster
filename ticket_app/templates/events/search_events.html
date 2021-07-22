@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if searched %}
+  <h1 class="text-center">You searched for {{ searched }}</h1>
+  <div>
+     <ol class="list-group">
+    {% for result in results %}
+      <li class="list-group-item"> {{result.name}}
+    {% endfor %}
+    </ol>
+  </div>
+
+
+
+
+{% else %}
+  <h1>Hey, you didn't search for anything</h1>
+{% endif %}
+
+
+
+
+
+{% endblock %}
